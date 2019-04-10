@@ -1,0 +1,252 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    --white: #ffffff;
+    --pastel-yellow: #fff691;
+    --mint-julep: #d9ffa3;
+    --thin-air: #c2feff;
+    --black: #000000;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--thin-air);
+    padding: 100px 0;
+}
+
+.weather-status {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-status .headline {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.main-headline {
+    font-size: 80px;
+}
+
+.temperature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.icon-temperature {
+    width: 50px;
+    margin-left: 50px;
+}
+
+.headline {
+    font-size: 50px;
+    align-self: center;
+}
+
+.temperature .headline {
+    display: flex;
+    top: 5px;
+    left: 50px;
+    margin-right: 20px;
+}
+
+.parameters {
+    background-color: var(--mint-julep);
+    padding: 100px 0;
+}
+
+.parameters-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.parameters-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.parameters-headline {
+    font-size: 35px;
+}
+
+.parameters-result {
+    font-size: 45px;
+    display: flex;
+    align-self: center;
+}
+
+.search {
+    background-color: var(--pastel-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+.logo {
+    width: 90px;
+}
+
+.name-headline {
+    font-size: 50px;
+    margin-left: 50px;
+}
+
+.search-header {
+    display: flex;
+    align-items: center;
+}
+
+.search-city {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.city {
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 50px;
+    text-indent: 10px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.search-button {
+    font-size: 20px;
+    border-radius: 15px;
+    border: 3px solid var(--black);
+    font-weight: bold;
+    background-color: var(--pastel-yellow);
+    padding: 5px;
+    width: 200px;
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+}
+
+.search-button:hover {
+    background-color: var(--mint-julep);
+}
+
+.value {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+    .parameters {
+        display: flex;
+        justify-content: center;
+    }
+
+    .parameters-block {
+        padding: 30px;
+        width: 50%;
+        box-sizing: border-box;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .parameters-block {
+        width: 100%;
+    }
+
+    .search-header {
+        flex-direction: column;
+    }
+
+    .name-headline {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .city {
+        width: 95%;
+        max-width: 300px;
+    }
+
+    .icon-temperature {
+        margin-left: 15px;
+    }
+}

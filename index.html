@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aplikacja pogodowa</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<body>
+    <section class="weather">
+        <div class="weather-status">
+            <div class="weather-info">
+                <img class="weather-icon" src="images/thermometer.svg" alt="obrazek aktualnej pogody">
+                <h2 class="main-headline"><span class="value"></span>&deg;C</h2>
+            </div>
+            <h3 class="headline"></h3>
+        </div>
+        <div class="temperature">
+            <span>
+                <img class="icon-temperature" src="images/002-cold.svg" alt="obrazek minimalnej temperatury">
+            </span>
+            <h3 class="headline min-temp"><span class="value"></span>&deg;C</h3>
+            <span>
+                <img class="icon-temperature" src="images/001-heat.svg" alt="obrazek maksymalnej temperatury">
+            </span>
+            <h3 class="headline max-temp"><span class="value"></span>&deg;C</h3>
+        </div>
+    </section>
+    <section class="parameters">
+        <div class="parameters-icon">
+            <div class="parameters-block">
+                <div class="result">
+                    <span><img class="icon" src="images/011-pressure.svg" alt="obrazek ciśnienia"></span>
+                    <h2 class="parameters-headline">Ciśnienie</h2>
+                </div>
+                <p class="parameters-result pressure"><span class="value"></span>hPa</p>
+            </div>
+            <div class="parameters-block">
+                <div class="result">
+                    <span><img class="icon" src="images/005-wind.svg" alt="obrazek watru"></span>
+                    <h2 class="parameters-headline">Wiatr</h2>
+                </div>
+                <p class="parameters-result wind"><span class="value"></span>km/h</p>
+            </div>
+            <div class="parameters-block">
+                <div class="result">
+                    <span><img class="icon" src="images/006-drop.svg" alt="obrazek wilgotności"></span>
+                    <h2 class="parameters-headline">Wilgotność</h2>
+                </div>
+                <p class="parameters-result humidity"><span class="value"></span>%</p>
+            </div>
+            <div class="parameters-block">
+                <div class="result">
+                    <span><img class="icon" src="images/004-atmospheric.svg" alt="obrazek zachmurzenia"></span>
+                    <h2 class="parameters-headline">Zachmurzenie</h2>
+                </div>
+                <p class="parameters-result cloudy"><span class="value"></span>%</p>
+            </div>
+        </div>
+    </section>
+    <section class="search">
+        <div class="search-header">
+            <img class="logo" src="images/012-calendar.svg" alt="logo">
+            <h2 class="name-headline">EWeAther</h2>
+        </div>
+        <div class="search-city">
+            <input class="city" type="text" placeholder="Wpisz miasto" autofocus>
+            <button class="search-button" type="submit">Sprawdź pogodę</button> 
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
